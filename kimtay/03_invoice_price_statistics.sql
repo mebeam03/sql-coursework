@@ -1,5 +1,3 @@
--- KimTay Pet Supplies | Invoice-line price statistics
--- Counts invoice lines, not distinct invoices.
 SELECT
     COUNT(INVOICE_NUM) AS NUMBER_OF_INVOICE_LINES,
     AVG(QUOTED_PRICE) AS AVERAGE_QUOTED,
