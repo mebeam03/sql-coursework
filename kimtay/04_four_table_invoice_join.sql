@@ -1,5 +1,3 @@
--- KimTay Pet Supplies | Invoices, customers, and sales representatives
--- Selected from the uploaded class practice file.
 SELECT
     IL.ITEM_ID,
     IL.QUANTITY,
