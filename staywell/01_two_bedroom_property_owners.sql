@@ -1,5 +1,4 @@
--- StayWell Assignment 8 | Owners who own two-bedroom properties
--- Three equivalent approaches. The join version is made DISTINCT to avoid duplicate owners.
+-- Owners who own two-bedroom properties
 
 -- A: IN subquery (original approach)
 SELECT *
