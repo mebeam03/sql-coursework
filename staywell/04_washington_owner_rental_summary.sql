@@ -1,0 +1,15 @@
+-- StayWell Assignment 8 Part 2 | Washington owners with >$1,500 total monthly rent
+-- Equivalent to original query; simplifies redundant subquery to O.STATE = 'WA'.
+SELECT
+    O.OWNER_NUM,
+    O.LAST_NAME,
+    O.FIRST_NAME,
+    COUNT(P.PROPERTY_ID) AS NUM_PROPERTIES,
+    SUM(P.MONTHLY_RENT) AS TOTAL_RENT,
+    AVG(P.MONTHLY_RENT) AS AVG_RENT
+FROM OWNER O
+INNER JOIN PROPERTY P ON O.OWNER_NUM = P.OWNER_NUM
+WHERE O.STATE = 'WA'
+GROUP BY O.OWNER_NUM, O.LAST_NAME, O.FIRST_NAME
+HAVING SUM(P.MONTHLY_RENT) > 1500
+ORDER BY TOTAL_RENT DESC;

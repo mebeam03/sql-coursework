@@ -1,0 +1,15 @@
+-- KimTay Pet Supplies | Invoices, customers, and sales representatives
+-- Selected from the uploaded class practice file.
+SELECT
+    IL.ITEM_ID,
+    IL.QUANTITY,
+    IL.INVOICE_NUM,
+    I.INVOICE_DATE,
+    I.CUST_ID,
+    C.FIRST_NAME AS CUSTFNAME,
+    C.LAST_NAME AS CUSTLNAME,
+    SR.LAST_NAME AS SRLNAME
+FROM INVOICE_LINE IL
+INNER JOIN INVOICES I ON IL.INVOICE_NUM = I.INVOICE_NUM
+INNER JOIN CUSTOMER C ON I.CUST_ID = C.CUST_ID
+INNER JOIN SALES_REP SR ON C.REP_ID = SR.REP_ID;

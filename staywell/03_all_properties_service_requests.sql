@@ -1,0 +1,13 @@
+-- StayWell Assignment 8 | All properties, including those with no service requests
+-- LEFT JOIN retained from original submission.
+SELECT
+    P.ADDRESS,
+    P.SQR_FT,
+    P.OWNER_NUM,
+    SR.SERVICE_ID,
+    SR.EST_HOURS,
+    SR.SPENT_HOURS,
+    SR.CATEGORY_NUMBER
+FROM PROPERTY P
+LEFT JOIN SERVICE_REQUEST SR ON P.PROPERTY_ID = SR.PROPERTY_ID
+ORDER BY SR.CATEGORY_NUMBER, P.ADDRESS;
