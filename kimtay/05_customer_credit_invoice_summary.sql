@@ -1,5 +1,4 @@
 -- KimTay Pet Supplies | Invoices exceeding $250 from customers in good credit standing
--- Selected from uploaded class practice; presentation formatting only.
 SELECT
     I.CUST_ID,
     I.INVOICE_NUM,
