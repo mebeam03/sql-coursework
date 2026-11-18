@@ -1,5 +1,4 @@
--- StayWell Assignment 8 Part 2 | Washington owners with >$1,500 total monthly rent
--- Equivalent to original query; simplifies redundant subquery to O.STATE = 'WA'.
+-- Washington owners with >$1,500 total monthly rent
 SELECT
     O.OWNER_NUM,
     O.LAST_NAME,
