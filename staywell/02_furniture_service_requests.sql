@@ -1,4 +1,4 @@
--- StayWell Assignment 8 | Furniture replacement service requests
+-- Furniture replacement service requests
 -- Corrected to display property address (not office address).
 SELECT
     SR.PROPERTY_ID,
