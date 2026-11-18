@@ -1,5 +1,4 @@
--- StayWell Assignment 8 | All properties, including those with no service requests
--- LEFT JOIN retained from original submission.
+-- All properties, including those with no service requests
 SELECT
     P.ADDRESS,
     P.SQR_FT,
